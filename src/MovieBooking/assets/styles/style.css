@@ -1,0 +1,200 @@
+@font-face {
+  font-family: Helv-neue;
+  src: url(./../fonts/helveticaneue.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Helv-neue-bold;
+  src: url(./../fonts/helveticaneuebold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Helv-neue-medium;
+  src: url(./../fonts/helveticaneuemedium.ttf);
+  font-weight: 500;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Helv-neue";
+}
+.body {
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff6565;
+  border: 1px solid #ff6565;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6565;
+}
+
+.header::after {
+  content: "";
+  position: fixed;
+  background: linear-gradient(
+    59deg,
+    rgba(0, 0, 0, 1) 29%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.info-movie {
+  background-color: white;
+  object-fit: 100%;
+  position: relative;
+}
+.info-movie {
+  background-color: white;
+  object-fit: 100%;
+}
+.container-fluid .left .info-movie .poster {
+  position: relative;
+}
+.container-fluid .left .info-movie .poster .icon-play {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  bottom: -30px;
+  left: 40%;
+  filter:drop-shadow(0 0 10px #ff6565)
+}
+.modal-backdrop{display: none;}
+
+.modal.fade .modal-dialog{
+  transform: translate(-76%,0px)!important;
+}
+.container-fluid .left .info-movie .icon-play:hover {
+  filter: drop-shadow(0 0 10px #ff6565);
+}
+.container-fluid .left .info-movie .info {
+  background-color: #222;
+  padding: 40px 20px 10px 30px;
+  font-size: 13px;
+}
+.container-fluid .left .info-movie .info p {
+  color: #888;
+  margin: 13px auto;
+}
+.container-fluid .left .info-movie .info .eighteenUpper {
+  border: 1px solid #fff;
+  padding: 1px 7px;
+}
+.container-fluid .left .info-movie .info .recommend,
+.container-fluid .left .info-movie .info .movie-title,
+.container-fluid .left .info-movie .info .time {
+  color: white;
+}
+.container-fluid .left .info-movie .info .movie-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.container-fluid .middle .seatHint {
+  font-size: 13px;
+}
+
+.container-fluid .middle .seatHint .seatHint-1 .gheDuocChon {
+  filter: invert(48%) sepia(100%) saturate(595%) hue-rotate(318deg)
+    brightness(101%) contrast(112%);
+  
+}
+
+.container-fluid .middle .seatHint .seatHint-2 .gheDangChon {
+  filter: invert(63%) sepia(91%) saturate(555%) hue-rotate(105deg)
+    brightness(200%) contrast(120%);
+}
+.gheDuocChon {
+    filter: invert(48%) sepia(100%) saturate(595%) hue-rotate(318deg)
+      brightness(101%) contrast(112%) drop-shadow(0 0 8px #ff6565ad);
+      cursor: no-drop!important;
+  }
+.soGheDuocChon {
+      cursor: no-drop!important;
+}
+.gheDangChon {
+      filter: invert(63%) sepia(91%) saturate(555%) hue-rotate(105deg)
+        brightness(200%) contrast(120%) drop-shadow(0 0 8px #00ffadad);
+    }
+.container-fluid .middle .info-booking {
+  width: 100%;
+}
+.screen {
+  width: 100%;
+  height: 80px;
+  border: solid 5px #000;
+  border-color: #ff6565 transparent transparent transparent;
+  border-radius: 70%/100px 100px 0 0;
+  filter: drop-shadow(3px 3px 10px #ff6565);
+  letter-spacing: 5px;
+}
+.ghe{
+    position: relative;
+     background-color: transparent;
+     border:0;
+     margin: 0 20px;
+     width: 49px;
+     height: 38px;
+   }
+.soGhe{
+    position: absolute;
+    color: black!important;
+    font-size: 12px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin:0 auto;
+    top: 6px;
+    z-index: 10;
+}
+
+.rownumber {
+    font-size: 18px;
+    width: 43px;
+    background: none;
+    border: none;
+    margin-left: 33px;
+    margin-right: 13px;
+    cursor: text!important;
+}
+.rowText {
+    width: 11px;
+}
+.table th{
+  font-size: 15px;
+  font-weight: 300;
+}
+.table td{
+  position:relative;
+}
+span.soGheDangDat {
+  position: absolute;
+  color: black;
+  z-index: 10;
+  font-size: 13px;
+  top: 13px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.delete {
+  background-color: transparent;
+  border:1px solid #ff6565;
+  padding: 0 5px;
+  border-radius: 3px;
+  color:#ff6565;
+  transition: .1s ease-in-out;
+  font-size: 13px;
+}
+.delete:hover{
+  color:#fff;
+  background-color: #ff6565;
+}
