@@ -61,7 +61,7 @@ export default class MovieBooking extends Component {
                     height={60}
                   />
                   <div
-                    class="modal fade"
+                    className="modal fade"
                     id="trailer"
                     tabindex="-1"
                     role="dialog"
@@ -69,10 +69,10 @@ export default class MovieBooking extends Component {
                     aria-hidden="true"
                   >
                     <div
-                      class="modal-dialog modal-dialog-centered"
+                      className="modal-dialog modal-dialog-centered"
                       role="document"
                     >
-                      <div class="modal-content">
+                      <div className="modal-content">
                         <iframe
                           width="1280"
                           height="720"
