@@ -19,9 +19,6 @@ const MovieBookingReducer = (state = stateDefault, action) => {
       return { ...state };
     }
 
-
-
-    
     case huyGheType: {
       let danhSachGheDangDatUpdate = [...state.danhSachGheDangDat];
       let index = danhSachGheDangDatUpdate.findIndex(
