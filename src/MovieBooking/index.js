@@ -163,12 +163,13 @@ export default class MovieBooking extends Component {
                 </div>
               </div>
             </div>
-            <div className="right col-2">
+            <div className="right col-2 align-self-end">
               <div className="info-booking d-flex flex-column ">
-                <div className="title text-center mb-4">Thông tin đặt chỗ</div>
+                <div className="title text-center mb-4">THÔNG TIN ĐẶT CHỖ</div>
                 <div className="billing">
                   <ThongTinDatGhe />
                 </div>
+
               </div>
             </div>
           </div>

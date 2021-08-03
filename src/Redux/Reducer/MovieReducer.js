@@ -21,15 +21,14 @@ const MovieBookingReducer = (state = stateDefault, action) => {
 
     case huyGheType: {
       let danhSachGheDangDatUpdate = [...state.danhSachGheDangDat];
-      let index = danhSachGheDangDatUpdate.findIndex(
-        (gheDangDat) => gheDangDat.soGhe === action.ghe.soGhe
-      );
+      let index = danhSachGheDangDatUpdate.findIndex(gheDangDat => gheDangDat.soGhe === action.soGhe);
       if (index !== -1) {
         danhSachGheDangDatUpdate.splice(index, 1);
       }
-      state.danhSachGheDangDat = state.danhSachGheDangDatUpdate;
+      state.danhSachGheDangDat = danhSachGheDangDatUpdate;
       return { ...state };
     }
+
     default:
       return { ...state };
   }

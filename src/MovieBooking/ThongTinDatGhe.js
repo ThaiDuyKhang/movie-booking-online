@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {huyGheAction} from "./../Redux/actions/MovieBookingAction";
+import { huyGheAction } from "./../Redux/actions/MovieBookingAction";
 import { connect } from "react-redux";
 
 class ThongTinDatGhe extends Component {
@@ -8,10 +8,9 @@ class ThongTinDatGhe extends Component {
       <div>
         <table className="table text-center">
           <thead>
-            <tr>
+            <tr class="headerTable">
               <th>Số ghế</th>
               <th>Giá tiền</th>
-              <th></th>
             </tr>
           </thead>
           <tbody className="table-info-booking">
@@ -28,18 +27,35 @@ class ThongTinDatGhe extends Component {
                       height={30}
                     />
                   </td>
-                  <td><span className="giaTien">{gheDangDat.gia}</span></td>
-                  <td><button className="delete"
-                  onClick={()=>{this.props.dispatch({
-                    type: huyGheAction,
-                    soGhe: gheDangDat.soGhe
-                  })}}>
-                    X
-                    </button></td>
+                  <td>
+                    <span className="giaTien">{gheDangDat.gia}</span>
+                    <button
+                      className="delete"
+                      onClick={() => {
+                        this.props.huyGhe(gheDangDat.soGhe);
+                      }}
+                    >
+                      X
+                    </button>
+                  </td>
                 </tr>
               );
             })}
           </tbody>
+          <tfoot>
+            <tr>
+              <td>Tổng cộng</td>
+              <td>
+              {this.props.danhSachGheDangDat.reduce(
+                  (tongTien, gheDangDat, index) => {
+                    return (tongTien += gheDangDat.gia);
+                  },0).toLocaleString()}
+              </td>
+            </tr>
+            <tr>
+              
+            </tr>
+          </tfoot>
         </table>
       </div>
     );
@@ -51,5 +67,12 @@ const mapStateToProps = (state) => {
     danhSachGheDangDat: state.MovieBookingReducer.danhSachGheDangDat,
   };
 };
+const mapDispatchToProps = (dispatch) => {
+  return {
+    huyGhe: (soGhe) => {
+      dispatch(huyGheAction(soGhe));
+    },
+  };
+};
 
-export default connect(mapStateToProps, null)(ThongTinDatGhe);
+export default connect(mapStateToProps, mapDispatchToProps)(ThongTinDatGhe);
