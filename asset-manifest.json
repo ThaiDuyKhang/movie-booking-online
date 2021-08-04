@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/thaiduykhang.github.io/movie-booking-online/static/css/main.7f66bd75.chunk.css",
+    "main.js": "/thaiduykhang.github.io/movie-booking-online/static/js/main.87c5b808.chunk.js",
+    "main.js.map": "/thaiduykhang.github.io/movie-booking-online/static/js/main.87c5b808.chunk.js.map",
+    "runtime-main.js": "/thaiduykhang.github.io/movie-booking-online/static/js/runtime-main.e8c29cb2.js",
+    "runtime-main.js.map": "/thaiduykhang.github.io/movie-booking-online/static/js/runtime-main.e8c29cb2.js.map",
+    "static/css/2.081f420c.chunk.css": "/thaiduykhang.github.io/movie-booking-online/static/css/2.081f420c.chunk.css",
+    "static/js/2.34993c19.chunk.js": "/thaiduykhang.github.io/movie-booking-online/static/js/2.34993c19.chunk.js",
+    "static/js/2.34993c19.chunk.js.map": "/thaiduykhang.github.io/movie-booking-online/static/js/2.34993c19.chunk.js.map",
+    "static/js/3.f6d0c87f.chunk.js": "/thaiduykhang.github.io/movie-booking-online/static/js/3.f6d0c87f.chunk.js",
+    "static/js/3.f6d0c87f.chunk.js.map": "/thaiduykhang.github.io/movie-booking-online/static/js/3.f6d0c87f.chunk.js.map",
+    "index.html": "/thaiduykhang.github.io/movie-booking-online/index.html",
+    "static/css/2.081f420c.chunk.css.map": "/thaiduykhang.github.io/movie-booking-online/static/css/2.081f420c.chunk.css.map",
+    "static/css/main.7f66bd75.chunk.css.map": "/thaiduykhang.github.io/movie-booking-online/static/css/main.7f66bd75.chunk.css.map",
+    "static/js/2.34993c19.chunk.js.LICENSE.txt": "/thaiduykhang.github.io/movie-booking-online/static/js/2.34993c19.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/thaiduykhang.github.io/movie-booking-online/static/media/helveticaneuemedium.d0966923.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e8c29cb2.js",
+    "static/css/2.081f420c.chunk.css",
+    "static/js/2.34993c19.chunk.js",
+    "static/css/main.7f66bd75.chunk.css",
+    "static/js/main.87c5b808.chunk.js"
+  ]
+}
