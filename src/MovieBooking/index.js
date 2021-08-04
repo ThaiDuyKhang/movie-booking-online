@@ -5,6 +5,14 @@ import HangGhe from "./HangGhe";
 import ThongTinDatGhe from "./ThongTinDatGhe";
 
 export default class MovieBooking extends Component {
+  buttonFocus = () => {
+    const [isClick, setIsFocus] = false;
+    window.onclick = () => {
+      setIsFocus(window.onclick ? true : false);
+      return () => (window.onclick = null);
+    };
+  };
+
   renderHangGhe = () => {
     return danhSachGheData.map((hangGhe, index) => {
       return (
@@ -56,7 +64,7 @@ export default class MovieBooking extends Component {
                     data-target="#trailer"
                     src="./images/play.svg"
                     alt="./images/play.svg"
-                    className="icon-play" 
+                    className="icon-play"
                     width={60}
                     height={60}
                   />
@@ -124,13 +132,37 @@ export default class MovieBooking extends Component {
               </div>
             </div>
             <div className="middle col-8 mt-4">
-              <div className="mt-1 d-flex flex-column justify-content-center align-items-center">
+              <div className="row d-flex justify-content-center">
+                <div className=" ngayChieu col-6 row d-flex justify-content-center align-items-center">
+                  <div className="text col-4">Chọn ngày chiếu:</div>
+                  <div className="col-8">
+                    <button className="btn-ngayChieu">06/10</button>
+                    <button className="btn-ngayChieu active">07/10</button>
+                    <button className="btn-ngayChieu">08/10</button>
+                    <button className="btn-ngayChieu">09/10</button>
+                    <button className="btn-ngayChieu">10/10</button>
+                    <button className="btn-ngayChieu">11/10</button>
+                  </div>
+                </div>
+                <div className=" gioChieu col-6 row d-flex justify-content-center align-items-center">
+                  <div className="text col-4">Chọn suất chiếu:</div>
+                  <div className="col-8">
+                    <button className="btn-gioChieu">8:30</button>
+                    <button className="btn-gioChieu">11:30</button>
+                    <button className="btn-gioChieu">13:30</button>
+                    <button className="btn-gioChieu">15:30</button>
+                    <button className="btn-gioChieu">17:30</button>
+                    <button className="btn-gioChieu active">19:30</button>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-5 d-flex flex-column justify-content-center align-items-center">
                 <div className="screen mt-1 d-flex flex-column justify-content-center align-items-center">
                   MÀN HÌNH
                 </div>
                 <div className="seatPlan mt-5">{this.renderHangGhe()}</div>
               </div>
-              <div className="seatHint mt-5 d-flex justify-content-around">
+              <div className="seatHint mt-4 d-flex justify-content-around">
                 <div className="seatHint-1">
                   <img
                     src="./images/seat.svg"
@@ -169,7 +201,6 @@ export default class MovieBooking extends Component {
                 <div className="billing">
                   <ThongTinDatGhe />
                 </div>
-
               </div>
             </div>
           </div>

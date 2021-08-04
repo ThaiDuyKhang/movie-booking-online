@@ -130,6 +130,23 @@
 .container-fluid .middle .info-booking {
   width: 100%;
 }
+.ngayChieu .text, .gioChieu .text{
+max-width: 26%;
+}
+.ngayChieu .btn-ngayChieu, .gioChieu .btn-gioChieu{
+  background-color: transparent;
+  border:1px solid #888;
+  padding: 1px 6px;
+  border-radius:5px;
+  transition: .1s ease-in-out;
+  margin: 0 3px;
+}
+.ngayChieu .btn-ngayChieu:hover, :target, .ngayChieu .btn-ngayChieu:focus,
+.gioChieu .btn-gioChieu:hover, :target, .gioChieu .btn-gioChieu:focus, .active{
+  background-color: #00FFAD!important;
+  border:1px solid #00FFAD!important;
+  color:#000;
+}
 .screen {
   width: 100%;
   height: 80px;
@@ -223,7 +240,7 @@ span.soGheDangDat {
   background-color: rgba(34, 34, 34, 0.849);
 }
 .table tfoot {
-  margin-bottom: 134px;
+  margin-bottom: 63px;
   /* border-radius: 0 0 8px 8px !important; */
   border-top: 1px solid rgb(59, 59, 59)!important;
   text-align: center;
